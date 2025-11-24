@@ -27,3 +27,57 @@ O arquivo `base_conhecimento_ifood_genai.csv` deve conter as seguintes colunas:
 | reembolso   | Erro do restaurante garante reembolso   | Sim, cancelamentos por falha do restaurante geram reembolso total.       | Política 2.1 |
 
 ---
+
+## 📦 Instalação
+
+Clone este repositório e instale as dependências:
+
+```bash
+git clone https://github.com/seuusuario/agente-ifood-rag.git
+cd agente-ifood-rag
+pip install -r requirements.txt
+
+
+---
+
+### 2. **Execução**
+
+```markdown
+## ▶️ Como executar
+
+No terminal:
+
+```bash
+python agente_ifood.py
+
+
+---
+
+### 3. **Exemplos de uso**
+
+```markdown
+## 💬 Exemplos de uso
+Você: Quando o cliente tem direito a reembolso total? Agente: Quando o restaurante cancela o pedido ou quando há erro comprovado na entrega. (Fonte: Política 3.2)
+Você: Cliente foi cobrado após cancelamento Agente: Não encontrei resposta exata. Sugiro verificar o estorno no sistema financeiro.
+
+---
+
+## ⚠️ Fallback inteligente
+
+Se a pergunta não estiver na base ou a confiança for baixa, o agente responde de forma contextual:
+
+- **Reembolso** → "Sugiro validar manualmente com a política de reembolso."  
+- **Cancelamento** → "Sugiro abrir um ticket interno para confirmar o procedimento."  
+- **Cobrança** → "Sugiro verificar o estorno no sistema financeiro."  
+- **Outros casos** → "Consulte a política oficial ou abra um ticket interno."
+
+## 🚀 Ideias de evolução
+
+- Logs de confiança da resposta  
+- Interface web com Streamlit ou Gradio  
+- Integração com APIs fictícias de pedidos/estorno  
+- Classificação automática do tipo de caso
+
+## 📜 Licença
+
+Este projeto é apenas uma prova de conceito e pode ser adaptado conforme necessidade.
