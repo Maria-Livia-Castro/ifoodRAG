@@ -28,21 +28,8 @@ O arquivo `base_conhecimento_ifood_genai.csv` deve conter as seguintes colunas:
 
 ---
 
-## 📦 Instalação
+###  **Execução**
 
-Clone este repositório e instale as dependências:
-
-```bash
-git clone https://github.com/seuusuario/agente-ifood-rag.git
-cd agente-ifood-rag
-pip install -r requirements.txt
-
-
----
-
-### 2. **Execução**
-
-```markdown
 ## ▶️ Como executar
 
 No terminal:
@@ -53,9 +40,8 @@ python agente_ifood.py
 
 ---
 
-### 3. **Exemplos de uso**
+###  **Exemplos de uso**
 
-```markdown
 ## 💬 Exemplos de uso
 Você: Quando o cliente tem direito a reembolso total? Agente: Quando o restaurante cancela o pedido ou quando há erro comprovado na entrega. (Fonte: Política 3.2)
 Você: Cliente foi cobrado após cancelamento Agente: Não encontrei resposta exata. Sugiro verificar o estorno no sistema financeiro.
